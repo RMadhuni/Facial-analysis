@@ -1,13 +1,15 @@
 # Facial-analysis
 This project utilizes the fer (Facial Expression Recognition) library to detect emotions from an image using deep learning. The model predicts the emotions present on a human face and displays the detected emotion with a bounding box around the face.
 
-**1.Installation** 
+**Installation** 
+
 Before running the script, install the required dependencies:
 ```python
 pip install fer opencv-python matplotlib
 ```
 
 **Usage**
+
 Ensure you have an image file named image.jpg in your working directory or specify a different path.
 Run the script to detect emotions from the image.
 
@@ -47,21 +49,21 @@ plt.show()
 
 **Explanation**
 
-1.Read the Image: The script loads the image using OpenCV.
+1. Read the Image: The script loads the image using OpenCV.
 
-2.Initialize FER Detector: The FER() class is used to detect emotions.
+2. Initialize FER Detector: The FER() class is used to detect emotions.
 
-3.Detect Emotions: The detect_emotions() method returns a list of detected faces and their associated emotions.
+3. Detect Emotions: The detect_emotions() method returns a list of detected faces and their associated emotions.
 
-4.Extract Bounding Box: The coordinates for the detected face are retrieved.
+4. Extract Bounding Box: The coordinates for the detected face are retrieved.
 
-5.Get the Top Emotion: The top_emotion() function finds the most prominent emotion in the image.
+5. Get the Top Emotion: The top_emotion() function finds the most prominent emotion in the image.
 
-6.Draw Bounding Box: A green rectangle is drawn around the detected face.
+6. Draw Bounding Box: A green rectangle is drawn around the detected face.
 
-7.Display Emotion Label: The detected emotion and confidence score are displayed on the image.
+7. Display Emotion Label: The detected emotion and confidence score are displayed on the image.
 
-8.Show the Image: The modified image is displayed using Matplotlib.
+8. Show the Image: The modified image is displayed using Matplotlib.
 
 **Output**
 
